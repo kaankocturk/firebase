@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reddit</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+      <div class="container container1">
+          <form class="form-inline input" role="form">
+            <div class="form-group">
+              <label for="title">title:</label>
+              <input type="text" class="form-control" id="title" value="text">
+            </div>
+            <div class="form-group">
+              <label for="content">content:</label>
+              <input type="text" class="form-control" id="content" value="text">
+            </div>
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="email" value="text">
+            </div>
+              <button type="submit" class="btn btn-success addpost">Submit</button>
+          </form>
+      </div>
+      <div class="container container2">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>title</th>
+              <th>content</th>
+              <th>date</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr id="template">
+                <td class='title'></td>
+                <td class='content'></td>
+                <td class='date'></td>
+                <td class='email'></td>
+              </tr>
+            </tbody>
+        </table>
+     </div>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Details</h4>
+      </div>
+      <div class="modal-body">
+        <div class="info1">
+
+        </div>
+        <div class="info2">
+
+        </div>
+        <div class="info3">
+
+        </div>
+        <div class="info4">
+
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <input type="text" class="form-control" id="comment" placeholder="comment here">
+        </div>
+        <button type="button" class="btn btn-primary comment">Comment</button>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default close">Close</button>
+        <div class="comments pull-left">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+      <script src='main.js'></script>
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+
+</body>
+</html>
